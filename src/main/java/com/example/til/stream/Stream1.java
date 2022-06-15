@@ -12,7 +12,10 @@ public class Stream1 {
         Stream<String> stream1 = Arrays.stream(array);
         Stream<String> stream2 = Arrays.stream(array, 2, 5);
 
-        stream1.forEach(System.out::println);
-        stream2.forEach(System.out::print);
+
+     /*   stream2.forEach(System.out::print);*/
+
+         stream1.distinct().forEach(System.out::println);
+
     }
 }
